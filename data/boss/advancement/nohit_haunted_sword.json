@@ -1,0 +1,17 @@
+{
+    "parent": "boss:haunted_sword",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "[SOLO ONLY] Defeat the Haunted Sword without taking any damage and without parrying",
+        "icon": {
+            "id": "golden_sword"
+        },
+        "title": "Dodge King",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

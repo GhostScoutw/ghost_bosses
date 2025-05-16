@@ -1,0 +1,17 @@
+{
+    "parent": "boss:parry",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "Block 500 damage with parries",
+        "icon": {
+            "id": "iron_helmet"
+        },
+        "title": "Denied!",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

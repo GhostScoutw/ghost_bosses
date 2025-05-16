@@ -1,0 +1,17 @@
+{
+    "parent": "boss:haunted_sword",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "[SOLO ONLY] Defeat the Haunted Sword by only parrying",
+        "icon": {
+            "id": "iron_sword"
+        },
+        "title": "Parry king",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

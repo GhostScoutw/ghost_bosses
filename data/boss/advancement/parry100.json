@@ -1,0 +1,17 @@
+{
+    "parent": "boss:parry",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "Parry 100 times!",
+        "icon": {
+            "id": "shield"
+        },
+        "title": "Parrytacular!!",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

@@ -1,0 +1,17 @@
+{
+    "parent": "boss:block500",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "Block 5000 damage with parries",
+        "icon": {
+            "id": "diamond_helmet"
+        },
+        "title": "I aint hear no bell!",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

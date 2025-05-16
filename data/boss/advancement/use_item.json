@@ -1,0 +1,11 @@
+{
+    "criteria":{
+        "requirement":{
+            "trigger": "minecraft:using_item"
+        }
+
+    },
+    "rewards": {
+        "function": "boss:using_item"
+    }
+}

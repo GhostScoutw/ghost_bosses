@@ -1,0 +1,1 @@
+function boss:player/get_id

@@ -1,0 +1,17 @@
+{
+    "parent": "boss:parry",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "Defeat the Curse of Midas",
+        "icon": {
+            "id": "gold_block"
+        },
+        "title": "Anti-Midas",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

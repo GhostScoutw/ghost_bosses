@@ -1,0 +1,18 @@
+{
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "Execute your first parry",
+        "icon": {
+            "id": "wooden_sword"
+        },
+        "title": "Parrytastic",
+        "show_toast": true,
+        "background": "minecraft:textures/block/netherite_block.png"
+    },
+    "sends_telemetry_event": true
+}
+

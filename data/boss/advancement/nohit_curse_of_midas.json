@@ -1,0 +1,20 @@
+{
+    "parent": "boss:curse_of_midas",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "[SOLO ONLY] Defeat the Curse of Midas without taking any damage and without parrying",
+        "icon": {
+            "id": "golden_sword",
+            "components": {
+                "enchantment_glint_override": true
+            }
+        },
+        "title": "True Ruler",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

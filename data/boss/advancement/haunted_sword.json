@@ -1,0 +1,17 @@
+{
+    "parent": "boss:parry",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "Defeat the Haunted Sword",
+        "icon": {
+            "id": "netherite_sword"
+        },
+        "title": "Haunted no more!",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

@@ -1,0 +1,17 @@
+{
+    "parent": "boss:curse_of_midas",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "[SOLO ONLY] Defeat the Curse of Midas by only parrying",
+        "icon": {
+            "id": "gold_ingot"
+        },
+        "title": "False Ruler",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

@@ -1,0 +1,2 @@
+give @p iron_sword[item_name='{"bold":true,"color":"gray","italic":false,"text":"Adventurer\'s Sword"}',lore=['{"color":"yellow","italic":false,"text":"Right click to parry any incoming damage and"}','{"color":"yellow","italic":false,"text":"return it to the attacker."}'],unbreakable={},custom_data={parry:1b,delete_on_ground:1b},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:999999,animation:"block"}] 1
+
