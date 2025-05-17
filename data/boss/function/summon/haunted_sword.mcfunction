@@ -20,8 +20,6 @@ bossbar set boss:haunted_sword color red
 bossbar set boss:haunted_sword style notched_6
 bossbar set boss:haunted_sword visible true
 
-say i spawned it?
-
 execute if entity @s[tag=solo_room] run scoreboard players operation @n[tag=aj.haunted_sword.root,tag=!boss] ghost.boss.solo_claim = @s ghost.room.claimed
 
 execute as @n[tag=aj.haunted_sword.root,tag=!boss] run tag @s add boss
