@@ -1,6 +1,6 @@
-execute unless score @s ghost.boss.target matches -2147483648..2147483647 run function boss:tick/boss/haunted_sword/get_target
+execute unless score @s ghost.boss.target matches -2147483648..2147483647 run function boss:tick/boss/get_target
 
-execute if score @s ghost.generic.agro_timer matches ..0 run function boss:tick/boss/haunted_sword/get_target
+execute if score @s ghost.generic.agro_timer matches ..0 run function boss:tick/boss/get_target
 
 #hit detection
 execute on passengers as @s[type=iron_golem] if data entity @s {HurtTime:9s} at @s run function boss:tick/boss/haunted_sword/hurt

@@ -1,6 +1,6 @@
-execute unless score @s ghost.boss.target matches -2147483648..2147483647 run function boss:tick/boss/curse_of_midas/get_target
+execute unless score @s ghost.boss.target matches -2147483648..2147483647 run function boss:tick/boss/get_target
 
-execute if score @s ghost.generic.agro_timer matches ..0 run function boss:tick/boss/curse_of_midas/get_target
+execute if score @s ghost.generic.agro_timer matches ..0 run function boss:tick/boss/get_target
 
 
 #hit detection
@@ -13,6 +13,7 @@ tag @s add self
 
 execute as @a if score @s ghost.generic.id = @n[tag=self] ghost.boss.target run tag @n[tag=self] add target.exists
 execute as @a if score @s ghost.generic.id = @n[tag=self] ghost.boss.target run tag @s add this.target
+
 
 execute if entity @s[tag=target.exists] at @s run function boss:tick/boss/curse_of_midas/move_to_target
 

@@ -19,6 +19,9 @@ scoreboard objectives add ghost.boss.hurt dummy
 
 scoreboard objectives add ghost.boss.hurt.temp dummy
 scoreboard objectives add ghost.boss.heal dummy
+
+scoreboard objectives add ghost.boss.solo_claim dummy
+
 ##generic
 scoreboard objectives add ghost.generic.id dummy
 scoreboard objectives add ghost.generic.agro_timer dummy
@@ -53,6 +56,9 @@ scoreboard objectives add ghost.effect.midas dummy
 scoreboard objectives add ghost.stat.parry_count dummy
 scoreboard objectives add ghost.stat.damage_blocked dummy
 
+##rooms
+scoreboard objectives add ghost.room.id dummy
+scoreboard objectives add ghost.room.claimed dummy
 
 ##constant
 scoreboard objectives add ghost.constant dummy

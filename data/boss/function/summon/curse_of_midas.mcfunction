@@ -22,5 +22,7 @@ bossbar set boss:curse_of_midas color yellow
 bossbar set boss:curse_of_midas style notched_12
 bossbar set boss:curse_of_midas visible true
 
+execute if score @s ghost.room.id matches -2147483648..2147483647 run scoreboard players operation @n[tag=aj.curse_of_midas.root,tag=!boss] ghost.boss.solo_claim = @s ghost.room.claimed
+
 execute as @n[tag=aj.curse_of_midas.root,tag=!boss] run tag @s add boss
 
