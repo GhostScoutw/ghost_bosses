@@ -9,4 +9,7 @@ execute on attacker as @s[tag=boss_hitbox] on vehicle at @s run function boss:ti
 
 execute if entity @s[team=ghost.arena] at @s positioned ~ ~2 ~ run function boss:player/summon_wisp
 
+execute as @e[tag=boss] if score @s ghost.boss.solo_claim = @p[tag=dead_player] ghost.generic.id at @s run tp @s ~ ~-10 ~
+execute as @e[tag=boss] if score @s ghost.boss.solo_claim = @p[tag=dead_player] ghost.generic.id at @s run function boss:kill/nearest/boss
+
 tag @s remove dead_player

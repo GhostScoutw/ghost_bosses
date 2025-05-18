@@ -13,14 +13,15 @@ execute as @n[tag=aj.haunted_sword.root,tag=!boss] on passengers as @s[type=iron
 execute as @n[tag=aj.haunted_sword.root,tag=!boss] on passengers as @s[type=iron_golem] run data merge entity @s {NoAI:1b,Silent:1b,Tags:["boss_hitbox"]}
 execute as @n[tag=aj.haunted_sword.root,tag=!boss] on passengers as @s[type=iron_golem] run effect give @s invisibility infinite 1 true
 
+execute if score @s ghost.room.id matches -2147483648..2147483647 run scoreboard players operation @n[tag=aj.haunted_sword.root,tag=!boss] ghost.boss.solo_claim = @s ghost.room.claimed
+execute if entity @s[tag=solo_room] run tag @n[tag=aj.haunted_sword.root,tag=!boss] add boss_solo
 
-bossbar add boss:haunted_sword {"text":"Haunted Sword","color":"dark_red","bold":true}
-execute store result bossbar boss:haunted_sword max run scoreboard players get @n[tag=aj.haunted_sword.root,tag=!boss] ghost.boss.hp
-bossbar set boss:haunted_sword color red
-bossbar set boss:haunted_sword style notched_6
-bossbar set boss:haunted_sword visible true
+execute unless entity @s[tag=solo_room] run bossbar add boss:haunted_sword {"text":"Haunted Sword","color":"dark_red","bold":true}
+execute unless entity @s[tag=solo_room] store result bossbar boss:haunted_sword max run scoreboard players get @n[tag=aj.haunted_sword.root,tag=!boss] ghost.boss.hp
+execute unless entity @s[tag=solo_room] run bossbar set boss:haunted_sword color red
+execute unless entity @s[tag=solo_room] run bossbar set boss:haunted_sword style notched_6
+execute unless entity @s[tag=solo_room] run bossbar set boss:haunted_sword visible true
 
-execute if entity @s[tag=solo_room] run scoreboard players operation @n[tag=aj.haunted_sword.root,tag=!boss] ghost.boss.solo_claim = @s ghost.room.claimed
 
 execute as @n[tag=aj.haunted_sword.root,tag=!boss] run tag @s add boss
 

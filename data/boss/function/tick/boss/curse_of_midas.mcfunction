@@ -27,8 +27,8 @@ execute as @a[tag=this.target] run tag @s remove this.target
 tag @s remove target.exists
 tag @s remove self
 
-execute store result bossbar boss:curse_of_midas value run scoreboard players get @s ghost.boss.hp.temp
-bossbar set boss:curse_of_midas players @a
+execute unless entity @s[tag=boss_solo] store result bossbar boss:curse_of_midas value run scoreboard players get @s ghost.boss.hp.temp
+execute unless entity @s[tag=boss_solo] run bossbar set boss:curse_of_midas players @a
 
 execute unless score @s ghost.boss.hp.temp >= @s ghost.boss.hp \
 if score @s ghost.boss.heal matches 1.. run scoreboard players add @s ghost.boss.hp.temp 1

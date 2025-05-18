@@ -29,8 +29,9 @@ execute at @s positioned ~-15 ~-15 ~-15 as @p[dx=30,dy=30,dz=30] if score @s gho
 
 execute as @s[tag=solo_mid,tag=!is_claimed] run function boss:solo_room/unclaim
 
+#selectors
 
-
+execute as @e[tag=selector_hitbox] if score @s ghost.room.claimed = @n[tag=this.room] ghost.room.claimed run function boss:solo_room/selector/tick
 
 execute as @e[tag=solo_door,tag=this.door] run tag @s remove this.door
 tag @s remove solo_selector_exists

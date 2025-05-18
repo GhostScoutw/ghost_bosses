@@ -5,24 +5,9 @@ data modify storage boss:temp temp.actionbar set value []
 data modify storage boss:temp temp.actionbar append value '[{"text":" ","color":"white","bold":"false"}]'
 
 
-execute if score @s ghost.effect.midas matches 1.. run data \
-modify storage boss:temp temp.actionbar append value '[{"text":"[!]","color":"red"},{"text":"Midas curse! ","color":"gold","bold":true},{"score":{"name":"@s","objective":"ghost.effect.midas"}}]'
+execute as @s[team=ghost.lobby] run function boss:actionbar/lobby
+execute as @s[team=ghost.arena] run function boss:actionbar/arena
+execute as @s[team=ghost.pvp] run function boss:actionbar/pvp
+execute as @s[team=ghost.solo] run function boss:actionbar/solo
 
 
-data modify storage boss:temp temp.actionbar append value '[{"text": "cooldown: ","color":"yellow"},{"score": {"name": "@s","objective": "ghost.player.parry.cooldown"}}]'
-
-execute if items entity @s container.* *[custom_data~{healing_charge:1b}] run data \
-modify storage boss:temp temp.actionbar append value '[{"text": "  Energy: ","color":"green"},{"score": {"name": "@s","objective": "ghost.player.healing_charge"},"color":"green"}]'
-
-
-
-execute if entity @n[tag=boss] if entity @s[team=!ghost.solo,team=!ghost.pvp] run data \
-modify storage boss:temp temp.actionbar append value '[{"text": "   ","color":"gold"},{"score": {"name": "@n[tag=boss]","objective": "ghost.boss.hp.temp"},"color":"gold"},{"text": "❤ | ","color":"gold"},{"score": {"name": "@n[tag=boss]","objective": "ghost.boss.hp"},"color":"red"},{"text": "❤","color":"red"}]'
-
-execute if entity @n[tag=boss,scores={ghost.boss.heal=1..}] if entity @s[team=!ghost.solo,team=!ghost.pvp] run data \
-modify storage boss:temp temp.actionbar append value '[{"text": " +","color":"light_purple"},{"score": {"name": "@n[tag=boss,scores={ghost.boss.heal=1..}]","objective": "ghost.boss.heal"},"color":"light_purple"},{"text": "❤","color":"light_purple"}]'
-
-
-
-
-title @s actionbar {"nbt":"temp.actionbar[]","storage":"boss:temp","interpret":true} 
