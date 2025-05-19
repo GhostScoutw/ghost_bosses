@@ -7,6 +7,3 @@ execute as @a if score @s ghost.generic.id = @n[tag=this.room] ghost.room.claime
 
 
 $function boss:summon/$(summon)
-
-
-particle flame ~ ~1 ~

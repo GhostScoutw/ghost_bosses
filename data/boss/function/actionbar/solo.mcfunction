@@ -13,8 +13,6 @@ tag @s add player.this
 execute as @e[tag=boss,tag=boss_solo] if score @s ghost.boss.solo_claim = @p[tag=player.this] ghost.generic.id run tag @s add my_boss
 
 
-execute as @n[tag=my_boss] at @s run particle flame ^ ^1 ^1
-
 execute if entity @n[tag=boss,tag=boss_solo,tag=my_boss] run data \
 modify storage boss:temp temp.actionbar append value '[{"text": "   ","color":"gold"},{"score": {"name": "@n[tag=my_boss]","objective": "ghost.boss.hp.temp"},"color":"gold"},{"text": "❤ | ","color":"gold"},{"score": {"name": "@n[tag=my_boss]","objective": "ghost.boss.hp"},"color":"red"},{"text": "❤","color":"red"}]'
 

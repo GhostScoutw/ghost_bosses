@@ -1,0 +1,1 @@
+give @p resin_brick[custom_data={material:1b},item_name='{"bold":true,"color":"gold","text":"Cursed Gold Ingot"}',lore=['{"color":"dark_aqua","italic":false,"text":"[MATERIAL]"}','{"color":"gray","italic":false,"text":"Found in the resting place of Midas, "}','[{"color":"gray","italic":false,"text":"The "},{"bold":true,"color":"gold","italic":false,"text":"King of Greed."}]']] 1

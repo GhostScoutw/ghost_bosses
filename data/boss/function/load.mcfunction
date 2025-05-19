@@ -53,7 +53,7 @@ scoreboard objectives add ghost.wisp.delay dummy
 scoreboard objectives add ghost.effect.midas dummy
 
 ##statistics
-scoreboard objectives add ghost.stat.parry_count dummy
+scoreboard objectives add ghost.stat.parry_count dummy [{"text":"Parry count","color": "gold"}]
 scoreboard objectives add ghost.stat.damage_blocked dummy
 
 ##rooms

@@ -1,0 +1,1 @@
+give @p flint[custom_data={material:1b},item_name='{"bold":true,"color":"dark_gray","text":"Rotten metal chunk"}',lore=['{"color":"dark_aqua","italic":false,"text":"[MATERIAL]"}','{"color":"gray","italic":false,"text":"Despite being a bundle of metal scrap, you mind wavers"}','{"color":"gray","italic":false,"text":"just by looking at this for too long."}']] 1
