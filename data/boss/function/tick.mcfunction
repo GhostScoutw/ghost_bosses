@@ -2,6 +2,8 @@
 execute as @a[tag=!has_id] run function boss:player/join
 effect give @a saturation infinite 1 true
 
+scoreboard players remove @a[scores={ghost.player.parry.executed=1..}] ghost.player.parry.executed 1
+
 scoreboard players enable @a death_tip
 
 execute as @a[scores={death_tip=1..}] run function boss:player/death_tip_toggle

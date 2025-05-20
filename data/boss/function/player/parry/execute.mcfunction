@@ -40,6 +40,7 @@ execute if score @s ghost.player.healing_charge matches 51.. if items entity @s 
 execute if score @s ghost.player.healing_charge matches 51.. if items entity @s container.* *[custom_data~{healing_charge:1b}] run scoreboard players set @s ghost.player.healing_charge 50
 
 
+scoreboard players set @s ghost.player.parry.executed 4
 tag @s add reset_parry
 
 function boss:player/parry/parry_damage with storage boss:temp temp

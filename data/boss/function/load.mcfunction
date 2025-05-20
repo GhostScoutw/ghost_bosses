@@ -33,6 +33,7 @@ scoreboard objectives add ghost.item_count dummy
 ##player
 scoreboard objectives add ghost.player.parry.duration dummy
 scoreboard objectives add ghost.player.parry.cooldown dummy
+scoreboard objectives add ghost.player.parry.executed dummy
 
 scoreboard objectives add ghost.player.parry.max.shield dummy
 scoreboard objectives add ghost.player.parry.shield dummy
