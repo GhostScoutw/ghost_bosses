@@ -1,6 +1,6 @@
 
 execute if score @s ghost.effect.midas matches 1.. run data \
-modify storage boss:temp temp.actionbar append value '[{"text":"[!]","color":"red"},{"text":"Midas curse! ","color":"gold","bold":true},{"score":{"name":"@s","objective":"ghost.effect.midas"}}]'
+modify storage boss:temp temp.actionbar append value '[{"text":"[!]","color":"red"},{"text":"Golden touch! ","color":"gold","bold":true},{"score":{"name":"@s","objective":"ghost.effect.midas"}}]'
 
 
 data modify storage boss:temp temp.actionbar append value '[{"text": "cooldown: ","color":"yellow"},{"score": {"name": "@s","objective": "ghost.player.parry.cooldown"}}]'
