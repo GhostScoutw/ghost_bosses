@@ -2,3 +2,4 @@
 execute unless entity @s[type=minecraft:item_display,tag=aj.curse_of_midas.root] run return run function animated_java:global/errors/function_not_executed_as_root_entity {'export_namespace': 'curse_of_midas', 'function_path': 'animated_java:curse_of_midas/animations/pause_all'}
 tag @s remove aj.curse_of_midas.animation.idle.playing
 tag @s remove aj.curse_of_midas.animation.triple_stab.playing
+tag @s remove aj.curse_of_midas.animation.area_attack.playing

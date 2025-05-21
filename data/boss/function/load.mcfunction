@@ -29,7 +29,12 @@ scoreboard objectives add ghost.generic.rng dummy
 
 scoreboard objectives add ghost.generic.hp dummy
 scoreboard objectives add ghost.generic.hp.temp dummy
+
+scoreboard objectives add ghost.generic.lifetime dummy
+
 scoreboard objectives add ghost.item_count dummy
+
+
 ##player
 scoreboard objectives add ghost.player.parry.duration dummy
 scoreboard objectives add ghost.player.parry.cooldown dummy

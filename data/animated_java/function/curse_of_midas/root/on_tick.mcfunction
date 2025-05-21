@@ -3,4 +3,5 @@ execute unless entity @s[tag=aj.curse_of_midas.root] run return 0
 execute unless score @s aj.is_rig_loaded matches 1 run function #animated_java:global/root/on_load
 execute if entity @s[tag=aj.curse_of_midas.animation.idle.playing] run function animated_java:curse_of_midas/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.curse_of_midas.animation.triple_stab.playing] run function animated_java:curse_of_midas/animations/triple_stab/zzz/on_tick
+execute if entity @s[tag=aj.curse_of_midas.animation.area_attack.playing] run function animated_java:curse_of_midas/animations/area_attack/zzz/on_tick
 execute at @s on passengers run rotate @s ~ ~
