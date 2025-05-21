@@ -9,14 +9,14 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"dark_red","text":"Haunted Sword"}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"dark_red","text":"Haunted Sword"}'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.5f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 1","color":"green"}'},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 1","color":"green"}'},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
@@ -33,14 +33,14 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"gold","text":"Curse of Midas","bold":true}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"gold","text":"Curse of Midas","bold":true}'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.5f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 2","color":"yellow"}'},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 2","color":"yellow"}'},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
@@ -57,14 +57,14 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.5f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
@@ -80,14 +80,14 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.5f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
@@ -103,14 +103,14 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.5f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
@@ -126,14 +126,14 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.5f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
@@ -149,14 +149,14 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.5f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
@@ -172,14 +172,14 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.5f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}'},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
