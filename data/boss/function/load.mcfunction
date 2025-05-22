@@ -31,6 +31,7 @@ scoreboard objectives add ghost.generic.hp dummy
 scoreboard objectives add ghost.generic.hp.temp dummy
 
 scoreboard objectives add ghost.generic.lifetime dummy
+scoreboard objectives add ghost.generic.counter dummy
 
 scoreboard objectives add ghost.item_count dummy
 
@@ -50,6 +51,9 @@ scoreboard objectives add ghost.player.item.cooldown dummy
 
 scoreboard objectives add ghost.player.death deathCount
 
+
+scoreboard objectives add ghost.player.menu_page dummy
+
 ##wisp
 scoreboard objectives add ghost.wisp.lifetime dummy
 scoreboard objectives add ghost.wisp.delay dummy
@@ -66,15 +70,15 @@ scoreboard objectives add ghost.stat.damage_blocked dummy
 scoreboard objectives add ghost.room.id dummy
 scoreboard objectives add ghost.room.claimed dummy
 
+scoreboard objectives add death_tip trigger
+scoreboard objectives add menu trigger
+
 ##constant
 scoreboard objectives add ghost.constant dummy
 
-
-
-scoreboard objectives add death_tip trigger
-
 scoreboard players set 2 ghost.constant 2
 
+##teams
 team add ghost.lobby
 
 team modify ghost.lobby color dark_gray

@@ -7,7 +7,7 @@ execute if score @s ghost.generic.agro_timer matches ..0 run function boss:tick/
 execute on passengers as @s[type=iron_golem] if data entity @s {HurtTime:9s} at @s run function boss:tick/boss/curse_of_midas/hurt
 
 #idle particles
-execute if entity @s[tag=!aj.curse_of_midas.animation.slash.playing,tag=!aj.curse_of_midas.animation.cut.playing] run particle dust_color_transition{from_color:[1.000,0.506,0.012],scale:1,to_color:[1.000,1.000,0.000]} ~ ~5 ~ 0.8 3 0.8 0 4
+execute if entity @s[tag=!aj.curse_of_midas.animation.triple_stab.playing,tag=!aj.curse_of_midas.animation.area_attack.playing] run particle dust_color_transition{from_color:[1.000,0.506,0.012],scale:1,to_color:[1.000,1.000,0.000]} ~ ~5 ~ 0.8 3 0.8 0 4
 
 tag @s add self
 

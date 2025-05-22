@@ -33,7 +33,7 @@ Passengers:[\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"gold","text":"Curse of Midas","bold":true}'},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'[{"bold":true,"color":"gold","text":"Curse of Midas","bold":true},{"text":" [WIP]","color":"red","underlined": true}]'},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
