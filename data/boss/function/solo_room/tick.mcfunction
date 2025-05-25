@@ -33,6 +33,12 @@ execute as @s[tag=solo_mid,tag=!is_claimed] run function boss:solo_room/unclaim
 
 execute as @e[tag=selector_hitbox] if score @s ghost.room.claimed = @n[tag=this.room] ghost.room.claimed run function boss:solo_room/selector/tick
 
+execute as @e[tag=solo_block] if score @s ghost.room.claimed = @n[tag=this.room] ghost.room.claimed at @s run tp @s ~ ~ ~ ~-2 ~
+execute as @e[tag=solo_block] if score @s ghost.room.claimed = @n[tag=this.room] ghost.room.claimed at @s run particle dust{color:[150.0f,0.0f,0.0f],scale:1} ~ ~-2 ~ 0 1 0 0 2
+execute as @e[tag=solo_block] if score @s ghost.room.claimed = @n[tag=this.room] ghost.room.claimed at @s run particle smoke ~ ~ ~ 0.5 0.5 0.5 0 2
+
+execute as @e[tag=solo_block_orbital] if score @s ghost.room.claimed = @n[tag=this.room] ghost.room.claimed positioned as @n[tag=this.room] positioned ~ ~3 ~ rotated as @s run tp @s ^ ^ ^2 ~0.3 ~
+
 execute as @e[tag=solo_door,tag=this.door] run tag @s remove this.door
 tag @s remove solo_selector_exists
 tag @s remove solo_boss_alive
