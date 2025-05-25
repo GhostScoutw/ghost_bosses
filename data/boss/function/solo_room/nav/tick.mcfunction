@@ -12,7 +12,6 @@ execute as @e[tag=solo_mid] \
     run data merge entity @n[tag=this.nav] {item:{id:"minecraft:lime_dye"}}
 
 execute on passengers as @s[type=interaction] if data entity @s interaction on target run tag @s add nav_player
-execute on passengers as @s[type=interaction] if data entity @s interaction on target run say i interacted
 execute on passengers as @s[type=interaction] if data entity @s interaction run data remove entity @s interaction
 
 execute as @e[tag=solo_door] \
