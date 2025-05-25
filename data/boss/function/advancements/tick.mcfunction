@@ -5,9 +5,15 @@ execute if entity @s[tag=ghost.adv.parry] run advancement grant @s only boss:par
 
 
 execute if entity @s[tag=ghost.adv.haunted_sword] run advancement grant @s only boss:haunted_sword
+execute if entity @s[tag=ghost.adv.haunted_sword.only_parry] run advancement grant @s only boss:parry_haunted_sword
+execute if entity @s[tag=ghost.adv.haunted_sword.nohit] run advancement grant @s only boss:nohit_haunted_sword
 
 
 execute if entity @s[tag=ghost.adv.curse_of_midas] run advancement grant @s only boss:curse_of_midas
+execute if entity @s[tag=ghost.adv.curse_of_midas.only_parry] run advancement grant @s only boss:parry_curse_of_midas
+execute if entity @s[tag=ghost.adv.curse_of_midas.nohit] run advancement grant @s only boss:nohit_curse_of_midas
+
+
 
 
 execute if entity @s[scores={ghost.stat.parry_count=100..}] run advancement grant @s only boss:parry100
