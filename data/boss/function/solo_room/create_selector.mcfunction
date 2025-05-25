@@ -1,3 +1,14 @@
+
+scoreboard players set @s ghost.generic.counter 60
+function boss:tick/boss/curse_of_midas/attack/area_attack_pulse
+particle large_smoke ~ ~3 ~ 0.5 0.5 0.5 0.1 100
+particle lava ~ ~ ~ 1 1 1 5 60
+
+playsound entity.evoker.cast_spell master @a ~ ~ ~ 2 0.8
+playsound block.campfire.crackle master @a ~ ~ ~ 2 1.2 1
+playsound block.fire.ambient master @a ~ ~ ~ 2 0.5 1
+
+
 summon text_display ~ ~4 ~ {billboard:"vertical",alignment:"center",Tags:["init","solo_selector","solo_selector_text"],text:'{"text":"Select a boss","bold":true,"color":"dark_red","underlined": true}',background:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]}}
 
 #floating cube
