@@ -34,6 +34,7 @@ scoreboard objectives add ghost.generic.hp.temp dummy
 
 scoreboard objectives add ghost.generic.lifetime dummy
 scoreboard objectives add ghost.generic.counter dummy
+scoreboard objectives add ghost.generic.delay dummy
 
 scoreboard objectives add ghost.item_count dummy
 

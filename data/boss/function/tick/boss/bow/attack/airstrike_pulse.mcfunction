@@ -1,0 +1,12 @@
+execute rotated ~ 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~30 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~60 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~90 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~120 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~150 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~180 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~210 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~240 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~270 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~300 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
+execute rotated ~330 0 run particle end_rod ^ ^0.1 ^-1 ^ ^ ^1000000 0.00000015 0
