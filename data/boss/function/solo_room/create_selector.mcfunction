@@ -85,26 +85,26 @@ translation:[0f,-0.2f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:gold_ingot",coun
 execute as @e[tag=solo_selector,tag=init] at @s run rotate @s ~45 ~
 
 
-#empty
-summon interaction ~ ~ ~-1.5 {width:0.7f,height:0.7f,response:1b,Tags:["solo_selector","selector_hitbox","empty_selector","init"],\
+#gale wind
+summon interaction ~ ~ ~-1.5 {width:0.7f,height:0.7f,response:1b,Tags:["solo_selector","selector_hitbox","bow_selector","init"],\
 Passengers:[\
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","text":"Placeholder","bold":true}',background:0},\
+translation:[0f,0.3f,0f],scale:[1f,1f,1f]},text:'[{"bold":true,"color":"aqua","text":"Gale Wind ","bold":true},{"text":"[WIP]","color":"red"}]',background:0},\
 \
 \
 {alignment:"center",id:"minecraft:text_display",billboard:"vertical",Tags:["solo_selector","init"],\
 \
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 0","color":"white"}',background:0},\
+translation:[0f,0.8f,0f],scale:[1f,1f,1f]},text:'{"text":"Difficulty: 2","color":"yellow"}',background:0},\
 {id:"minecraft:item_display",billboard:"center",Tags:["solo_selector","init"],\
 transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],\
 \
-translation:[0f,-0.2f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:glass_pane",count:1}}]}
+translation:[0f,-0.2f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:bow",count:1}}]}
 
 execute as @e[tag=solo_selector,tag=init] at @s run rotate @s ~45 ~
 

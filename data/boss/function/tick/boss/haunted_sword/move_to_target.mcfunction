@@ -9,6 +9,7 @@ execute if entity @s[tag=!aj.haunted_sword.animation.slash.playing,tag=!aj.haunt
 
 
 execute at @s run tp @s ~ ~ ~ ~ 0
+execute at @s on passengers run rotate @s ~ ~
 
 
 

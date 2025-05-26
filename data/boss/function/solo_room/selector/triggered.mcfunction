@@ -9,6 +9,9 @@ as @n[tag=this.room] at @s run return run function boss:solo_room/selector/summo
 execute if entity @s[tag=curse_of_midas_selector] \
 as @n[tag=this.room] at @s run return run function boss:solo_room/selector/summon {summon:curse_of_midas}
 
+execute if entity @s[tag=bow_selector] \
+as @n[tag=this.room] at @s run return run function boss:solo_room/selector/summon {summon:bow}
+
 execute if entity @s[tag=empty_selector] \
 as @n[tag=this.room] at @s as @a if score @s ghost.generic.id = @n[tag=this.room] ghost.room.claimed run return run tellraw @s {"text":"This is a placeholder, selecting this does literally nothing."}
 

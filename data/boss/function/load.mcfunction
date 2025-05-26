@@ -9,6 +9,8 @@ tellraw @a[tag=is_dev] [{"text":"Check ","color":"yellow"},{"text":"ghost.config
 scoreboard objectives add ghost.config dummy
 
 ##boss
+scoreboard objectives add ghost.boss.id dummy
+
 scoreboard objectives add ghost.boss.target dummy
 scoreboard objectives add ghost.boss.move_cooldown dummy
 

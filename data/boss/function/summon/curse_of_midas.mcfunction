@@ -24,6 +24,6 @@ execute unless entity @s[tag=solo_room] run bossbar set boss:curse_of_midas colo
 execute unless entity @s[tag=solo_room] run bossbar set boss:curse_of_midas style notched_12
 execute unless entity @s[tag=solo_room] run bossbar set boss:curse_of_midas visible true
 
-
+execute as @n[tag=aj.curse_of_midas.root,tag=!boss] run function boss:summon/get_id
 execute as @n[tag=aj.curse_of_midas.root,tag=!boss] run tag @s add boss
 

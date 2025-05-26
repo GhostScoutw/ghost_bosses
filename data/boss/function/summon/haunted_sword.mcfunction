@@ -22,6 +22,6 @@ execute unless entity @s[tag=solo_room] run bossbar set boss:haunted_sword color
 execute unless entity @s[tag=solo_room] run bossbar set boss:haunted_sword style notched_6
 execute unless entity @s[tag=solo_room] run bossbar set boss:haunted_sword visible true
 
-
+execute as @n[tag=aj.haunted_sword.root,tag=!boss] run function boss:summon/get_id
 execute as @n[tag=aj.haunted_sword.root,tag=!boss] run tag @s add boss
 
