@@ -1,11 +1,12 @@
-particle cloud ~ ~ ~ 0.2 0.2 0.2 0.3 40
+particle end_rod ~ ~0.3 ~ 0.3 0.3 0.3 0.1 10
 
 data modify entity @s transformation.scale set value [1.0f,8.0f,2.0f]
 
-execute positioned ~ ~0.2 ~ run function boss:tick/boss/bow/attack/cloud_pulse
+data merge entity @s {transformation:{translation:[0.0f,0.0f,-4.0f]},interpolation_duration:2,start_interpolation:0}
 
-playsound minecraft:entity.breeze.jump master @a ~ ~ ~ 2 1.5
+#playsound minecraft:entity.breeze.land master @a ~ ~ ~ 1 2
+playsound minecraft:entity.breeze.shoot master @a ~ ~ ~ 0.5 1.5
 
-execute at @s as @a[distance=..3] run damage @s 7 mob_attack by @n[tag=bow_hitbox]
+execute at @s as @a[distance=..2] run damage @s 7 mob_attack by @n[tag=bow_hitbox]
 
 tag @s add collided

@@ -24,6 +24,8 @@ scoreboard objectives add ghost.boss.heal dummy
 
 scoreboard objectives add ghost.boss.solo_claim dummy
 
+scoreboard objectives add ghost.boss.bow.airstrike_count dummy
+
 ##generic
 scoreboard objectives add ghost.generic.id dummy
 scoreboard objectives add ghost.generic.agro_timer dummy

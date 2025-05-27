@@ -15,6 +15,9 @@ execute as @a if score @s ghost.generic.id = @n[tag=self] ghost.boss.target run 
 
 execute if entity @s[tag=target.exists] at @s run function boss:tick/boss/bow/move_to_target
 
+#airstrike spawning
+execute if score @s ghost.boss.bow.airstrike_count matches 1.. run scoreboard players remove @s ghost.boss.bow.airstrike_count 1
+execute if score @s ghost.boss.bow.airstrike_count matches 1.. run function boss:tick/boss/bow/attack/airstrike_select
 
 #remove agro
 execute if entity @s[tag=!target.exists] run scoreboard players reset @s ghost.boss.target
