@@ -2,3 +2,4 @@
 execute unless entity @s[type=minecraft:item_display,tag=aj.bow.root] run return run function animated_java:global/errors/function_not_executed_as_root_entity {'export_namespace': 'bow', 'function_path': 'animated_java:bow/animations/pause_all'}
 tag @s remove aj.bow.animation.idle.playing
 tag @s remove aj.bow.animation.shoot.playing
+tag @s remove aj.bow.animation.airstrike.playing

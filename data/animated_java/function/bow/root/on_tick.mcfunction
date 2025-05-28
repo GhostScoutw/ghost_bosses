@@ -3,4 +3,5 @@ execute unless entity @s[tag=aj.bow.root] run return 0
 execute unless score @s aj.is_rig_loaded matches 1 run function #animated_java:global/root/on_load
 execute if entity @s[tag=aj.bow.animation.idle.playing] run function animated_java:bow/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.bow.animation.shoot.playing] run function animated_java:bow/animations/shoot/zzz/on_tick
+execute if entity @s[tag=aj.bow.animation.airstrike.playing] run function animated_java:bow/animations/airstrike/zzz/on_tick
 execute at @s on passengers run rotate @s ~ ~

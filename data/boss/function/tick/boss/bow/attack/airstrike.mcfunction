@@ -10,10 +10,10 @@ $execute as @n[tag=init,tag=air_strike] at @s run rotate @s ~$(x1) ~$(z1)
 
 
 
-execute as @n[tag=init,tag=air_strike] run scoreboard players set @s ghost.generic.delay 15
+execute as @n[tag=init,tag=air_strike] run scoreboard players set @s ghost.generic.delay 20
 execute as @n[tag=init,tag=air_strike] run scoreboard players set @s ghost.generic.lifetime 80
 
-execute as @n[tag=init,tag=air_strike] at @s positioned ~ ~0.5 ~ run function boss:tick/boss/bow/attack/airstrike_pulse
+execute as @n[tag=init,tag=air_strike] at @s positioned ~ ~0.5 ~ run function boss:tick/boss/bow/attack/airstrike_pulse {distance:-2.6,speed:0.00000028}
 
 scoreboard players operation @n[tag=init,tag=air_strike] ghost.boss.id = @s ghost.boss.id
 execute as @n[tag=init,tag=air_strike] run tag @s remove init
