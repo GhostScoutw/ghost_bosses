@@ -6,7 +6,7 @@ execute if score @s ghost.generic.agro_timer matches ..0 run function boss:tick/
 execute on passengers as @s[type=iron_golem] if data entity @s {HurtTime:9s} at @s run function boss:tick/boss/bow/hurt
 
 #idle particles
-execute if entity @s[tag=!aj.bow.animation.shoot.playing] run particle trial_spawner_detection ~ ~1.5 ~ 0.3 1 0.3 0 3
+execute if entity @s[tag=!aj.bow.animation.shoot.playing] run particle trial_spawner_detection_ominous ~ ~1.5 ~ 0.3 1 0.3 0 3
 
 tag @s add self
 

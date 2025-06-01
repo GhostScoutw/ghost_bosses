@@ -5,5 +5,5 @@ execute if score @s ghost.generic.rng matches 1..50 run return run function anim
 
 
 
-execute if score @s ghost.generic.rng matches 51.. unless score @s ghost.boss.bow.airstrike_count matches 1.. run return run function animated_java:bow/animations/airstrike/play
+execute if score @s ghost.generic.rng matches 51.. unless entity @s[tag=airstrike.origin] run return run function animated_java:bow/animations/airstrike/play
 execute if score @s ghost.generic.rng matches 51.. run return run function animated_java:bow/animations/shoot/play
