@@ -15,3 +15,6 @@ execute as @e[type=item_display,tag=room_nav,tag=root] at @s run function boss:s
 execute as @e[type=marker,tag=solo_mid] at @s run function boss:solo_room/tick
 
 execute as @e[tag=projectile] at @s run function boss:tick/projectile
+
+
+execute as @e[type=interaction,tag=arsenal] if data entity @s interaction run function boss:tick/arsenal

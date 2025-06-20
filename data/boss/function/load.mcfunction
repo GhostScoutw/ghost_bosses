@@ -59,6 +59,9 @@ scoreboard objectives add ghost.player.death deathCount
 
 scoreboard objectives add ghost.player.menu_page dummy
 
+scoreboard objectives add ghost.player.weapon_id dummy
+scoreboard objectives add ghost.player.madness_stack dummy
+
 ##wisp
 scoreboard objectives add ghost.wisp.lifetime dummy
 scoreboard objectives add ghost.wisp.delay dummy
@@ -82,6 +85,9 @@ scoreboard objectives add menu trigger
 scoreboard objectives add ghost.constant dummy
 
 scoreboard players set 2 ghost.constant 2
+##triggers
+
+scoreboard objectives add change_weapon trigger
 
 ##teams
 team add ghost.lobby
