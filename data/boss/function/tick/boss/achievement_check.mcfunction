@@ -20,5 +20,12 @@ execute on vehicle if entity @s[tag=aj.curse_of_midas.root] if entity @p[tag=noh
 execute on vehicle if entity @s[tag=aj.curse_of_midas.root] if entity @p[tag=nohit] on passengers as @s[type=iron_golem] on attacker run tag @s add ghost.adv.curse_of_midas.nohit
 
 
+execute on vehicle if entity @s[tag=aj.bow.root] if entity @p[tag=only_parry] on passengers as @s[type=iron_golem] on attacker as @s[tag=!ghost.adv.bow.only_parry] run tellraw @a [{"selector": "@s"},{"text":" Has made the advancement ","color":"white"},{"text": "[Tamer of the Wind!]","color":"aqua"},{"text":"!","color": "white"}]
+execute on vehicle if entity @s[tag=aj.bow.root] if entity @p[tag=only_parry] on passengers as @s[type=iron_golem] on attacker run tag @s add ghost.adv.bow.only_parry
+
+execute on vehicle if entity @s[tag=aj.bow.root] if entity @p[tag=nohit] on passengers as @s[type=iron_golem] on attacker as @s[tag=!ghost.adv.bow.nohit] run tellraw @a [{"selector": "@s"},{"text":" Has made the advancement ","color":"white"},{"text": "[Eye of the Storm!]","color":"red","bold":true},{"text":"!","color": "white"}]
+execute on vehicle if entity @s[tag=aj.bow.root] if entity @p[tag=nohit] on passengers as @s[type=iron_golem] on attacker run tag @s add ghost.adv.bow.nohit
+
+
 execute on attacker run tag @s remove only_parry
 execute on attacker run tag @s remove nohit

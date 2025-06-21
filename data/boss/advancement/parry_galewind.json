@@ -1,0 +1,17 @@
+{
+    "parent": "boss:galewind",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "[SOLO ONLY] Defeat Galewind by only parrying",
+        "icon": {
+            "id": "arrow"
+        },
+        "title": "Tamer of the wind",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

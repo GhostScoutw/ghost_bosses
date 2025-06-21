@@ -1,0 +1,23 @@
+{
+    "parent": "boss:galewind",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "[SOLO ONLY] Defeat Galewind without taking any damage and without parrying",
+        "icon": {
+            "id": "tipped_arrow",
+            "components": {
+                "enchantment_glint_override": true,
+                "potion_contents": {
+                    "custom_color": 65535
+                }
+            }
+        },
+        "title": "Eye of the storm",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

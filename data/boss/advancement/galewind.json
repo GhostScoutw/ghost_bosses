@@ -1,0 +1,17 @@
+{
+    "parent": "boss:parry",
+    "criteria":{
+        "requirement":{
+            "trigger": "impossible"
+        }
+    },
+    "display":{
+        "description": "Defeat Galewind",
+        "icon": {
+            "id": "bow"
+        },
+        "title": "Calm after the storm",
+        "show_toast": true
+    },
+    "sends_telemetry_event": true
+}

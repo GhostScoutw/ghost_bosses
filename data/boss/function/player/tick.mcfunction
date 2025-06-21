@@ -5,7 +5,6 @@ scoreboard players remove @s[scores={ghost.player.parry.executed=1..}] ghost.pla
 
 scoreboard players enable @s death_tip
 scoreboard players enable @s menu
-scoreboard players enable @s change_weapon
 
 function boss:player/menu_tick
 
@@ -13,7 +12,6 @@ execute as @s on attacker as @s[type=!player] run tag @s add attacked_player
 
 execute as @s[scores={death_tip=1..}] run function boss:player/death_tip_toggle
 execute as @s[scores={menu=1..}] run function boss:player/menu
-execute as @s[scores={change_weapon=1..}] run function boss:player/change_weapon
 
 execute at @s run function boss:advancements/tick
 

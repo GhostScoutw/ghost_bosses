@@ -85,9 +85,6 @@ scoreboard objectives add menu trigger
 scoreboard objectives add ghost.constant dummy
 
 scoreboard players set 2 ghost.constant 2
-##triggers
-
-scoreboard objectives add change_weapon trigger
 
 ##teams
 team add ghost.lobby

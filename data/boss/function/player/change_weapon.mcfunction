@@ -1,4 +1,3 @@
-scoreboard players reset @s change_weapon
 
 scoreboard players add @s ghost.player.weapon_id 1
 

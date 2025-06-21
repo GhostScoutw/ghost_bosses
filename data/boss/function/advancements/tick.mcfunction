@@ -13,7 +13,9 @@ execute if entity @s[tag=ghost.adv.curse_of_midas] run advancement grant @s only
 execute if entity @s[tag=ghost.adv.curse_of_midas.only_parry] run advancement grant @s only boss:parry_curse_of_midas
 execute if entity @s[tag=ghost.adv.curse_of_midas.nohit] run advancement grant @s only boss:nohit_curse_of_midas
 
-
+execute if entity @s[tag=ghost.adv.bow] run advancement grant @s only boss:galewind
+execute if entity @s[tag=ghost.adv.bow.only_parry] run advancement grant @s only boss:parry_galewind
+execute if entity @s[tag=ghost.adv.bow.nohit] run advancement grant @s only boss:nohit_galewind
 
 
 execute if entity @s[scores={ghost.stat.parry_count=100..}] run advancement grant @s only boss:parry100
