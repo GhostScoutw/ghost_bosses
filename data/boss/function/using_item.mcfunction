@@ -7,3 +7,6 @@ execute if items entity @s weapon.mainhand *[custom_data~{parry:1b}] if predicat
 execute if items entity @s weapon.mainhand *[custom_data~{healing_charge:1b}] unless score @s ghost.player.item.cooldown matches 1.. run return run function boss:player/heal_charge
 
 execute if items entity @s weapon.mainhand *[custom_data~{menu_gui:1b}] unless score @s ghost.player.item.cooldown matches 1.. run return run trigger menu
+
+execute if items entity @s weapon.mainhand *[custom_data~{gravity_gun:1b}] unless predicate boss:sneak_interaction unless score @s ghost.player.parry.cooldown matches 1.. run return run function boss:item/gravity_gun/tick
+execute if items entity @s weapon.mainhand *[custom_data~{gravity_gun:1b}] if predicate boss:sneak_interaction unless score @s ghost.player.parry.cooldown matches 1.. run return run function boss:item/gravity_gun/launch

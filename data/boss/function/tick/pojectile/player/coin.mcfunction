@@ -12,5 +12,8 @@ execute unless block ~ ~ ~ air run kill @s
 execute unless entity @n[tag=this.origin,distance=..30] on passengers run kill @s
 execute unless entity @n[tag=this.origin,distance=..30] run kill @s
 
+execute if entity @s[tag=collided] on passengers run kill @s
+execute if entity @s[tag=collided] run kill @s
+
 execute as @a[tag=this.origin] run tag @s remove this.origin
 tag @s remove this.projectile

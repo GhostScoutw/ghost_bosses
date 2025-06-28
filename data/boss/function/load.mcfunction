@@ -85,6 +85,14 @@ scoreboard objectives add menu trigger
 scoreboard objectives add ghost.constant dummy
 
 scoreboard players set 2 ghost.constant 2
+scoreboard players set -1 ghost.constant -1
+
+##gravity Gun
+
+scoreboard objectives add ghost.gravity_gun dummy
+scoreboard objectives add ghost.gravity_gun.grabbed_by dummy
+scoreboard objectives add ghost.gravity_gun.launch dummy
+
 
 ##teams
 team add ghost.lobby
@@ -115,3 +123,4 @@ team modify ghost.pvp friendlyFire true
 execute unless score tools ghost.config matches -2147483648..2147483647 run scoreboard players set tools ghost.config 0
 execute unless score actionbar ghost.config matches -2147483648..2147483647 run scoreboard players set actionbar ghost.config 0
 execute unless score autoteam ghost.config matches -2147483648..2147483647 run scoreboard players set autoteam ghost.config 0
+execute unless score crown ghost.config matches -2147483648..2147483647 run scoreboard players set crown ghost.config 0

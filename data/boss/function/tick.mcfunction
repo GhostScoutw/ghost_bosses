@@ -18,3 +18,17 @@ execute as @e[tag=projectile] at @s run function boss:tick/projectile
 
 
 execute as @e[type=interaction,tag=arsenal] if data entity @s interaction run function boss:tick/arsenal
+
+
+execute as @e[tag=crown] unless score crown ghost.config matches 1 on passengers run kill @s
+execute as @e[tag=crown] unless score crown ghost.config matches 1 run kill @s
+
+execute as @e[tag=crown] on vehicle on passengers as @s[tag=crown] run tag @s add dont_kill
+
+execute as @e[tag=crown,tag=!dont_kill] on passengers run kill @s
+execute as @e[tag=crown,tag=!dont_kill] run kill @s
+
+execute as @e[tag=crown] on vehicle on passengers as @s[tag=crown] run tag @s remove dont_kill
+
+execute unless entity @a[scores={ghost.gravity_gun=1..}] run effect clear @e[scores={ghost.gravity_gun.grabbed_by=-2147483648..2147483647}] slow_falling
+execute unless entity @a[scores={ghost.gravity_gun=1..}] run scoreboard players reset @e[scores={ghost.gravity_gun.grabbed_by=-2147483648..2147483647}] ghost.gravity_gun.grabbed_by

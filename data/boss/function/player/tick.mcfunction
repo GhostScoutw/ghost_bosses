@@ -28,3 +28,9 @@ execute as @s[scores={ghost.player.parry.cooldown=1..}] run function boss:player
 
 execute as @s[scores={ghost.player.parry.duration=1..}] run function boss:player/parry/tick
 
+#crown
+
+execute if entity @s[name=GhostScoutw] if score crown ghost.config matches 1 run function boss:player/crown/check
+
+
+scoreboard players remove @s[scores={ghost.gravity_gun=1..}] ghost.gravity_gun 1

@@ -15,6 +15,16 @@ execute if entity @s[tag=arsenal_madness] on target if entity @s[tag=!ghost.adv.
 execute if entity @s[tag=arsenal_madness] run return run data remove entity @s interaction
 
 
+
+execute if entity @s[tag=arsenal_midas] on target if entity @s[tag=ghost.adv.curse_of_midas] run scoreboard players set @s ghost.player.weapon_id 3
+execute if entity @s[tag=arsenal_midas] on target if entity @s[tag=ghost.adv.curse_of_midas] run clear @s *[minecraft:custom_data~{parry:1b}]
+
+execute if entity @s[tag=arsenal_midas] on target if entity @s[tag=ghost.adv.curse_of_midas] run tellraw @s {"text":"Equipped Weapon","color":"gold"}
+execute if entity @s[tag=arsenal_midas] on target if entity @s[tag=!ghost.adv.curse_of_midas] run tellraw @s {"text":"You do not meet the requirements to equip this weapon!","color":"red"}
+execute if entity @s[tag=arsenal_midas] run return run data remove entity @s interaction
+
+
+
 execute if entity @s[tag=arsenal_galewind] on target if entity @s[tag=ghost.adv.bow] run scoreboard players set @s ghost.player.weapon_id 4
 execute if entity @s[tag=arsenal_galewind] on target if entity @s[tag=ghost.adv.bow] run clear @s *[minecraft:custom_data~{parry:1b}]
 
