@@ -2,7 +2,7 @@
 data modify storage boss:temp temp.actionbar set value []
 
 
-data modify storage boss:temp temp.actionbar append value '[{"text":" ","color":"white","bold":"false"}]'
+data modify storage boss:temp temp.actionbar append value [{"text":" ","color":"white","bold":"false"}]
 
 
 execute as @s[team=ghost.lobby] run function boss:actionbar/lobby
