@@ -8,7 +8,7 @@ scoreboard players set @s ghost.boss.move_cooldown 30
 execute on passengers as @s[tag=boss_hitbox] run tag @s add damager
 
 execute at @s positioned ~ ~ ~ as @a[distance=..4.5] run damage @s 16 mob_attack by @n[tag=damager]
-execute at @s positioned ~ ~ ~ as @a[distance=..4.5] run scoreboard players add @s ghost.effect.midas 30
+#execute at @s positioned ~ ~ ~ as @a[distance=..4.5] run scoreboard players add @s ghost.effect.midas 30
 
 
 execute on passengers as @s[tag=boss_hitbox] run tag @s remove damager

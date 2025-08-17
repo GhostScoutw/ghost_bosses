@@ -14,10 +14,10 @@ execute on vehicle run scoreboard players operation @s ghost.boss.hp.temp -= @n[
 
 execute on attacker unless score @s ghost.player.parry.executed matches 1.. as @n[tag=hitbox] run tag @s add got_attacked_normally
 
-execute on attacker if score @s ghost.effect.midas matches 1.. unless score @s ghost.player.parry.executed matches 1.. as @n[tag=hitbox] on vehicle run scoreboard players operation @s ghost.boss.hp.temp += @n[tag=hitbox] ghost.boss.hurt
-execute on attacker if score @s ghost.effect.midas matches 1.. unless score @s ghost.player.parry.executed matches 1.. as @n[tag=hitbox] on vehicle run scoreboard players operation @s ghost.boss.hp.temp += @n[tag=hitbox] ghost.boss.hurt
-execute on attacker if score @s ghost.effect.midas matches 1.. unless score @s ghost.player.parry.executed matches 1.. as @n[tag=hitbox] run playsound entity.glow_squid.ambient master @a ~ ~ ~ 2 2
-execute on attacker if score @s ghost.effect.midas matches 1.. unless score @s ghost.player.parry.executed matches 1.. run tellraw @s {"text":"You are healing the boss!","color":"gold","underlined": true}
+#execute on attacker if score @s ghost.effect.midas matches 1.. unless score @s ghost.player.parry.executed matches 1.. as @n[tag=hitbox] on vehicle run scoreboard players operation @s ghost.boss.hp.temp += @n[tag=hitbox] ghost.boss.hurt
+#execute on attacker if score @s ghost.effect.midas matches 1.. unless score @s ghost.player.parry.executed matches 1.. as @n[tag=hitbox] on vehicle run scoreboard players operation @s ghost.boss.hp.temp += @n[tag=hitbox] ghost.boss.hurt
+#execute on attacker if score @s ghost.effect.midas matches 1.. unless score @s ghost.player.parry.executed matches 1.. as @n[tag=hitbox] run playsound entity.glow_squid.ambient master @a ~ ~ ~ 2 2
+#execute on attacker if score @s ghost.effect.midas matches 1.. unless score @s ghost.player.parry.executed matches 1.. run tellraw @s {"text":"You are healing the boss!","color":"gold","underlined": true}
 tag @s remove hitbox
 
 execute on vehicle if score @s ghost.boss.hp.temp matches ..0 run function boss:tick/boss/curse_of_midas/die
