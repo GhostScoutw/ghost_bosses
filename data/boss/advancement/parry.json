@@ -11,7 +11,7 @@
         },
         "title": "Parrytastic",
         "show_toast": true,
-        "background": "minecraft:textures/block/netherite_block.png"
+        "background": "minecraft:block/netherite_block"
     },
     "sends_telemetry_event": true
 }
