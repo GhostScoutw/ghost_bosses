@@ -7,8 +7,8 @@ execute summon iron_golem run ride @s mount @n[tag=aj.haunted_sword.root,tag=!bo
 
 execute as @n[tag=aj.haunted_sword.root,tag=!boss] store result score @s ghost.boss.hp.temp run scoreboard players set @s ghost.boss.hp 200
 
-execute as @n[tag=aj.haunted_sword.root,tag=!boss] run data modify entity @s CustomName set value '{"text":"Haunted Sword","color":"dark_red"}'
-execute as @n[tag=aj.haunted_sword.root,tag=!boss] on passengers as @s[type=iron_golem] run data modify entity @s CustomName set value '{"text":"Haunted Sword","color":"dark_red"}'
+execute as @n[tag=aj.haunted_sword.root,tag=!boss] run data modify entity @s CustomName set value {"text":"Haunted Sword","color":"dark_red"}
+execute as @n[tag=aj.haunted_sword.root,tag=!boss] on passengers as @s[type=iron_golem] run data modify entity @s CustomName set value {"text":"Haunted Sword","color":"dark_red"}
 
 execute as @n[tag=aj.haunted_sword.root,tag=!boss] on passengers as @s[type=iron_golem] run data merge entity @s {NoAI:1b,Silent:1b,Tags:["boss_hitbox"]}
 execute as @n[tag=aj.haunted_sword.root,tag=!boss] on passengers as @s[type=iron_golem] run effect give @s invisibility infinite 1 true

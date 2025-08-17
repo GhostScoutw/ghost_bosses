@@ -7,8 +7,8 @@ execute summon iron_golem run ride @s mount @n[tag=aj.curse_of_midas.root,tag=!b
 
 execute as @n[tag=aj.curse_of_midas.root,tag=!boss] store result score @s ghost.boss.hp.temp run scoreboard players set @s ghost.boss.hp 400
 
-execute as @n[tag=aj.curse_of_midas.root,tag=!boss] run data modify entity @s CustomName set value '{"text":"Curse of Midas","color":"gold","bold":true}'
-execute as @n[tag=aj.curse_of_midas.root,tag=!boss] on passengers as @s[type=iron_golem] run data modify entity @s CustomName set value '{"text":"Curse of Midas","color":"gold","bold":true}'
+execute as @n[tag=aj.curse_of_midas.root,tag=!boss] run data modify entity @s CustomName set value {"text":"Curse of Midas","color":"gold","bold":true}
+execute as @n[tag=aj.curse_of_midas.root,tag=!boss] on passengers as @s[type=iron_golem] run data modify entity @s CustomName set value {"text":"Curse of Midas","color":"gold","bold":true}
 
 execute as @n[tag=aj.curse_of_midas.root,tag=!boss] on passengers as @s[type=iron_golem] run data merge entity @s {NoAI:1b,Silent:1b,Tags:["boss_hitbox"]}
 execute as @n[tag=aj.curse_of_midas.root,tag=!boss] on passengers as @s[type=iron_golem] run effect give @s invisibility infinite 1 true
