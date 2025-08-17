@@ -14,7 +14,7 @@ execute as @e[tag=solo_room] if score @s ghost.room.id = @n[tag=this.room] ghost
 execute at @s positioned ~-25 ~-25 ~-25 as @a[dx=50,dy=50,dz=50] positioned ~25 ~25 ~25 run function boss:solo_room/player_in_range
 
 
-execute as @e[tag=solo_text] if score @s ghost.room.id = @n[tag=this.room] ghost.room.id run data merge entity @s {text:'{"text":"OCCUPIED","color":"red","bold":true}'}
+execute as @e[tag=solo_text] if score @s ghost.room.id = @n[tag=this.room] ghost.room.id run data merge entity @s {text:{"text":"OCCUPIED","color":"red","bold":true}}
 
 #checks if theres a solo boss alive or a selector
 execute as @e[tag=boss] if score @s ghost.boss.solo_claim = @n[tag=this.room] ghost.room.claimed run tag @n[tag=this.room] add solo_boss_alive
