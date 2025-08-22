@@ -79,7 +79,7 @@ scoreboard objectives add ghost.room.id dummy
 scoreboard objectives add ghost.room.claimed dummy
 
 scoreboard objectives add death_tip trigger
-scoreboard objectives add menu trigger
+#scoreboard objectives add menu trigger
 
 ##constant
 scoreboard objectives add ghost.constant dummy
